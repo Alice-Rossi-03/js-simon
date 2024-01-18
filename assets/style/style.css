@@ -29,4 +29,6 @@ div{
     padding-inline: 2em;
     border-radius: 1em;
     color: cornflowerblue;
+    font-size: 2em;
+    font-weight: bold;
 }
