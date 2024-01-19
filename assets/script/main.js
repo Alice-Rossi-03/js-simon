@@ -34,11 +34,11 @@ function countDownFunction(){ // funzione per generare il timer
 
     console.log(hours, minutes, seconds) // verifica in console 
 
-    if (countDown === 0){ // se il countDown raggiunge lo 0
+    if (countDownSec <= 0){ // se il countDown raggiunge lo 0
         clearInterval(countdownTimer)
         countdownHtml.innerHTML = 'Lezione!'
     } else { // altrimenti continua a calare 
-        countDown--
+        countDownSec--
         countdownHtml.innerHTML = `${hours}-${minutes}-${seconds}` // testo all'interno dell'html 
     }
 }
